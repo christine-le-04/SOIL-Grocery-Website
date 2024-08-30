@@ -1,0 +1,791 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  /* Navbar stuff */
+  .navbar {
+    background-color: #2f2c29;
+    padding-left: 9%;
+    padding-right: 3%;
+  }
+  
+  /* Gets rid of margin at the top */
+  html ul {
+    margin: 0em 0;
+    padding: 0;
+  }
+  
+  .navbar ul:hover {
+    background-color: #2f2c29;
+  }
+  
+  .navbar ul li {
+    min-width: 100px;
+    list-style: none;
+    padding: 15px 10px 15px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .navbar ul li:hover {
+    background-color: #9bbb4c;
+  }
+  
+  .navbar-right {
+    float: right;
+    padding-right: 7%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    display: none;
+    background-color: #2f2c29;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content button {
+    background-color: inherit;
+    color: white;
+    padding: 0%;
+  }
+  
+  /* Wrapper (external) and inner (internal) - for putting divs side by side w/o size restraints */
+  .wrapper {
+    padding: 15px 0 15px;
+    text-align: center;
+  }
+  
+  .main p {
+    text-align: center;
+  }
+  
+  .inner {
+    display: inline-block;
+    padding: 20px 30px 20px 30px;
+    vertical-align: middle;
+  }   
+  
+  .vertical-line {
+    display: inline-block;
+    border-left: 2px solid #c8c3be;
+    height: 40px;
+    vertical-align: middle;
+  }
+  
+  /* login/signup form */
+  /* .form-container {
+    background-image: url(https://images.unsplash.com/photo-1610348718584-07f43528231d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  } */
+  
+  .signup,
+  .login {
+    display: flex;
+    margin: 7% 15%;
+    border: 1px solid black;
+  }
+  
+  .signupform,
+  .signuptext,
+  .loginform,
+  .logintext,
+  .confirmation,
+  .redirect {
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 0% 5%;
+  }
+  
+  .signupform h1,
+  .signupform Button,
+  .signuptext h1,
+  .signuptext p,
+  .signuptext Button,
+  .logintext h1,
+  .logintext p,
+  .logintext Button,
+  .confirmation h1,
+  .confirmation p {
+    align-items: center;
+  }
+  
+  
+  .signupform input[type="text"],
+  .signupform input[type="email"],
+  .signupform input[type="password"],
+  .loginform input[type="email"],
+  .loginform input[type="password"] {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .signupform input[type="text"],
+  .signupform input[type="email"],
+  .signupform input[type="password"] {
+    width: 94%;
+    margin-bottom: 2%;
+  }
+  
+  .loginform input[type="email"],
+  .loginform input[type="password"] {
+    width: 91%;
+    margin-bottom: 3%;
+  }
+  
+  .signupform input[type="submit"],
+  .signuptext Button,
+  .loginform input[type="submit"],
+  .logintext Button {
+    background-color: #8ba744;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .signuptext Button,
+  .logintext Button {
+    margin: 0 auto;
+  }
+  
+  .signupform input[type="submit"]:hover,
+  .loginform input[type="submit"]:hover,
+  .signuptext Button:hover,
+  .logintext Button:hover {
+    background-color: #8ca748;
+  }
+  
+  .signuptext,
+  .logintext,
+  .redirect {
+    background-color: #9bbb4c;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .small-error-message {
+    /* padding-top: 1%; */
+    padding-bottom: 4%;
+  }
+  
+  .mid-error-message {
+    /* margin-top: 0%; */
+    padding-bottom: 8%;
+  }
+  
+  .small-error-message,
+  .mid-error-message,
+  .last-error-message {
+    font-size: 15px;
+    color: red;
+    text-align: left;
+    padding-left: 4%;
+  }
+  
+  /* profile page */
+  .profile h1, .profile h2 {
+    margin-left: 10%;
+    text-align: left;
+  }
+  
+  .profile h1 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  
+  .popup-text h1 {
+    text-align: center;
+    margin-left: 0%;
+  }
+  
+  .input-container p,
+  .popup-container p {
+    font-size: 17px;
+  }
+  
+  .box-container, 
+  .popup-container {
+    margin: 2% 10%;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+  }
+  
+  .input-container {
+    text-align: left;
+    margin-left: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  
+  .cc-input-container {
+    padding-bottom: 3%;
+  }
+  
+  .cc-input-container button {
+    background-color: #9bbb4c;
+    margin-top: 4%;
+  }
+  
+  .dietplan a button {
+    background-color: #9bbb4c;
+    margin-bottom: 1%;
+    margin-top: 2%;
+  }
+  
+  .dietbtn {
+    background-color: #9bbb4c;
+    margin-top: 1%;
+    margin-bottom: 3%;
+  }
+  
+  .name-container, 
+  .email-container,
+  .password-container,
+  .confirm-container,
+  .date-container {
+    display: flex;
+  }
+  
+  .name-container {
+    margin-top: 3%;
+  }
+  
+  .input-container p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 20%;
+  }
+  
+  .credit-input-container {
+    text-align: left;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  
+  .input-container input[type="text"],
+  .input-container input[type="email"],
+  .cc-input-container input[type="text"],
+  .cc-input-container select[type="text"],
+  .credit-input-container input[type="text"],
+  .credit-input-container select[type="text"],
+  .input-container input[type="password"] {
+    padding-left: 2%;
+    padding-right:7%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+  }
+  
+  .dietplan input[type="text"] {
+    padding: 2% 0%;
+    margin-top: 2%;
+    padding-left: 2%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+  }
+  
+  .macroinput input[type="text"] {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+  }
+  
+  .macro1 {
+    margin-right: 5%;
+  }
+  
+  .macro2 {
+    margin-left: 5%;
+  }
+  
+  .input-container input[name="last"],
+  .popup-container button[name="delete"],
+  .input-container button[name="save"] {
+    margin-left: 4%;
+  }
+  
+  .input-container button[name="edit"],
+  .input-container button[name="cancel"],
+  .input-container button[name="save"],
+  .popup-container button[name="cancel"],
+  .popup-container button[name="delete"] {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    background-color: #9bbb4c;
+    padding: 1.5% 5%;
+    font-size: 17px;
+  }
+  
+  .input-container button[name="edit"]:hover,
+  .input-container button[name="cancel"]:hover,
+  .input-container button[name="save"]:hover,
+  .popup-container button[name="cancel"]:hover,
+  .cc-input-container button:hover,
+  .dietplan button:hover {
+    background-color: #8ca748;
+  }
+  
+  button[name="delete-acc"] {
+    margin-bottom: 2%;
+  }
+  
+  .popup-container button[name="delete"],
+  button[name="delete-acc"] {
+    background-color: rgb(255, 53, 53);
+    color: white;
+    font-size: 17px;
+  }
+  
+  button[name="delete-acc"]:hover,
+  .popup-container button[name="delete"]:hover {
+    background-color: rgb(220, 30, 30);
+  }
+  
+  .popup-text {
+    padding: 3% 7%;
+  }
+  
+  .popup-text p {
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+  
+  .credit-popup-text {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  
+  .credit-popup-text p {
+    margin-bottom: 0%;
+  }
+  
+  .credit-popup-text h1 {
+    text-align: center;
+    margin-left: 0%;
+  }
+  
+  .cc-input-container input[type="text"], 
+  .cc-input-container select[type="text"] {
+    margin-top: 10%;
+    padding: 6%;
+    width: 240px;
+  }
+  
+  .cc-input-container select[type="text"] {
+    width: 275px;
+  }
+  
+  .cc-input-container p {
+    margin-bottom: 3%;
+  }
+  
+  .left-option {
+    margin-right: 10%;
+  }
+  
+  center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .name-error,
+  .email-error,
+  .password-error,
+  .confirm-error {
+    margin-left: 20.5%;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    color: red;
+  }
+  
+  .cc-error {
+    margin-top: 0.5%;
+    color: red;
+  }
+  
+  .macro-error {
+    color: red;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  
+  .name-error {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .lastname-error-message {
+    margin-left: 23.5%;
+  }
+  
+  .date-container  {
+    margin-top: 2%;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #2f2c29;
+    color: #f8f9fa;
+  }
+  
+  /* Positioning elements side-by-side with size restraints */
+  .left {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+  }
+  
+  .left-padding {
+    width: 5%;
+    float: left;
+  }
+  
+  .right {
+    width: 42%;
+    float: left;
+  }
+  
+  /* Use clearfix after using floating elements */
+  .clearfix {
+    clear: both;
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: white;
+  }
+  
+  .credit-centered {
+    width: 100%;
+    color: white;
+  }
+  
+  .cover {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+  }
+
+  /* .img {
+    width: -moz-available;          
+    width: -webkit-fill-available;  
+    width: fill-available;
+    object-fit: cover;
+  } */
+  
+  /* Same as above but 50% dark overlay on top.*/
+  .cover-darken {
+    object-fit: cover;
+    /* width: 100%; */
+    height: 400px;
+    filter: brightness(50%);
+    width: -moz-available;          
+    width: -webkit-fill-available;  
+    width: fill-available;
+    margin: -1.5% -12.55% -6% -12.55%;
+  }
+  
+  .cover-smaller {
+    object-fit: cover;
+    width: -moz-available;          
+    width: -webkit-fill-available;  
+    width: fill-available;
+    margin: -1.5% -12.55%;
+    height: 200px;
+    filter: brightness(50%);
+  }
+  
+  button {
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .button-green {
+    background-color: #9bbb4c;
+    color: white;
+  }
+  
+  .button-red {
+    background-color: red;
+    color: white;
+    margin-right: 1%;
+  }
+  
+  .middle-text {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /* meal plan/personalised profile */
+  .displayMealsWeekly {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .article {
+    margin: 0 1rem;
+    min-height: 20rem;
+    min-width: 20rem;
+    max-width: 20rem;
+    box-shadow: 0 4px 8px 2px rgba(68, 68, 68, 0.35);
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: calc(33.33%);
+    background-color: #ddd;
+    border-radius: 15px;
+  }
+  
+  .article-day h1 {
+    padding-top: 1%;
+    padding-left: 2%;
+    text-align: left;
+  }
+  
+  .article h2 {
+    padding: 0rem 1.8rem;
+    margin-top: 0%;
+  }
+  
+  .article p {
+    margin-top: -2%;
+  }
+  
+  .mealListWeekly h1 {
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+  
+  /* diet plan */
+  .dietplan p {
+    padding-bottom: 2%;
+  }
+  
+  .macronutrients, .macroinput {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  
+  .macronutrients {
+    gap: 10%;
+  }
+  
+  .dietflex {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  
+  .dietarticle {
+    width: calc(33.33%); 
+  }
+  
+  .dietflex .article p {
+    padding-bottom:0%;
+  }
+  
+  .dietplan h2 {
+    padding-bottom: 4%;
+  }
+  
+  #diet-popup {
+    margin-bottom: 5%;
+  }
+  
+  .special-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .special-item {
+    flex-basis: 15%;
+    margin: 0% 1%;
+  }
+  
+  .material-icons {
+    vertical-align: middle; 
+    line-height: 1; 
+}
+
+/* product details page */
+.product-details {
+  /* border: 2px solid #000; */
+  padding: 20px;
+  display: inline-block;
+}
+
+.product-details .right h3 {
+  margin-top: 4%;
+}
+
+.product-details .right p {
+  margin: 7% 0%;
+}
+
+.product-reviews {
+  /* border-style: solid;
+  border-color: yellow; */
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -2%;
+}
+
+.reviews-header button, .reviews-header h2 {
+  margin: 1% 0%;
+}
+
+.rating {
+  margin-top: 3%;
+  text-align: left;
+}
+
+.rating select {
+  margin-left: 3%;
+}
+
+.review-details .star {
+  margin-bottom: 2%;
+}
+
+.row {
+  display: ruby-text;
+}
+
+/* updated profile css */
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .form-group {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.left-profile, .right-profile {
+  text-align: left;
+  width: 45%;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.profile-buttons {
+  clear: both;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+
+/* buttons */
+.btn-primary, .btn-primary-big {
+  background-color: #9bbb4c;
+  border-color: #9bbb4c;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover, .btn-primary-big:hover {
+  background-color: #8ca748;  
+  border-color: #8ca748;
+}
+
+.btn-primary a, .btn-primary-big a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary-big {
+  padding: 15px 50px;
+}
+
+.delete-primary {
+  padding: 10px 20px;
+  background-color: rgb(255, 53, 53);
+  color: white;
+  border-color: rgb(255, 53, 53);
+}
+
+.delete-primary:hover {
+  background-color: rgb(228, 29, 29);
+  color: white;
+  border-color: rgb(228, 29, 29);
+}
+
+.text-primary {
+  color: #2f2f2f !important;
+}
